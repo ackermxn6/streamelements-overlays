@@ -38,8 +38,6 @@ const BROWSERish = {
 // ---------------------------------------------------------------
 //  Kick chatroom registry — one Pusher connection per chatroom.
 // ---------------------------------------------------------------
-const KICK_PUSHER_URL =
-  'wss://ws-us2.pusher.com/app/32cbd69e4b950bf97679?protocol=7&client=js&version=8.4.0-rc2&flash=false&cluster=us2';
 /** chatroomId -> { ws, slug, subscribers:Set<WebSocket>, retry, alive } */
 const rooms = new Map();
 
